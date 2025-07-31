@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>정유라 | 당근과 함께 성장하고 싶은 지원자</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        daangn: {
+                            orange: '#FF6F0F',
+                            light: '#FFFBF7',
+                            text: '#212124',
+                            subtext: '#495057',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['Pretendard', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        daangn: '0 4px 16px 0 rgba(0, 0, 0, 0.07)',
+                        'daangn-lg': '0 8px 24px 0 rgba(0, 0, 0, 0.09)',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: 0 },
+                            '100%': { opacity: 1 },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: 0 },
+                            '100%': { transform: 'translateY(0)', opacity: 1 },
+                        }
+                    },
+                    animation: {
+                        fadeIn: 'fadeIn 0.3s ease-out',
+                        slideUp: 'slideUp 0.4s ease-out',
+                    }
+                },
+            },
+        };
+    </script>
+
+    <!-- Pretendard Font -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <style>
+        /* 기본 스타일 설정 */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Pretendard', sans-serif;
+            word-break: keep-all;
+        }
+        /* @apply 구문을 제거하고, 해당 클래스들을 HTML에 직접 적용했습니다. */
+    </style>
+</head>
+
+<body class="bg-daangn-light font-sans antialiased text-daangn-text">
+
+    <!-- 네비게이션 바 -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm transition-all">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="font-bold text-lg text-daangn-orange">🥕 정유라 | 포트폴리오</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#why-daangn" class="text-daangn-subtext hover:text-daangn-orange font-medium transition-colors">Why Daangn?</a>
+                <a href="#about" class="text-daangn-subtext hover:text-daangn-orange font-medium transition-colors">Why Me?</a>
+                <a href="#experience" class="text-daangn-subtext hover:text-daangn-orange font-medium transition-colors">Experience</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-white">
+        <div class="container mx-auto px-6 py-24 text-center">
+            <!-- Profile Image -->
+            <div class="w-48 md:w-56 mx-auto mb-8">
+                <img src="647c8e5a0938ae5af2c2114b30057651.jpg"
+ alt="프로필 사진" class="rounded-full shadow-daangn-lg" onerror="this.onerror=null; this.src='https://placehold.co/224x224/FFBF9B/FFFFFF?text=Profile';">
+            </div>
+            <!-- Profile Text -->
+            <div>
+                <h1 class="text-4xl md:text-5xl font-bold text-daangn-text mb-4" style="line-height: 1.3;">안녕하세요! 👋<br>사용자 데이터에서 전략의 실마리를 찾아내는<br class="md:hidden"> 정유라입니다.</h1>
+                <p class="mt-8 max-w-3xl mx-auto text-lg text-daangn-subtext leading-relaxed">
+                    사람에 대한 따뜻한 관심에서 비롯된 사용자 행동을 날카로운 데이터 분석과 깊이 있는 시장 리서치로 연결하여, 당근의 전략적 의사결정을 위한 명확한 근거와 인사이트를 제시하고 싶습니다. 정성적인 공감대와 정량적인 분석 능력을 겸비하여 당근의 성장에 함께하겠습니다.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-16">
+        
+        <!-- Why Daangn Section -->
+        <section id="why-daangn" class="py-16">
+            <div class="max-w-4xl mx-auto bg-white p-12 md:p-16 rounded-2xl shadow-daangn-lg">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-daangn-text mb-8 text-center">Why Strategy Research at Daangn?</h2>
+                <div class="text-lg text-daangn-subtext space-y-6 leading-relaxed">
+                    <p>
+                        <span class="font-bold text-daangn-orange">저는 '사람과 동네에 대한 따뜻한 관심'이 기술과 만났을 때 가장 큰 가치를 창출한다고 믿습니다.</span> 휠체어 이용자의 이동 불편 문제 해결을 위한 아이디어를 제안하고, 비효율적인 업무 프로세스를 자동화 시스템으로 개선했던 경험들은 모두 주변의 문제를 발견하고 기술로 해결책을 찾는 과정이었습니다. 이러한 저의 가치관은 단순히 중고거래 플랫폼을 넘어, 지역 커뮤니티의 중심이 되어 이웃 간의 연결을 만들고 동네를 더 살기 좋은 곳으로 만들고자 하는 당근의 비전과 깊은 공감대를 형성합니다.
+                    </p>
+                    <p>
+                        특히 당근의 전략팀은 CEO 직속 조직으로서, 가장 중요한 의사결정이 이루어지는 최전선에 있다는 점에서 매력적으로 다가왔습니다. 저는 전략경영 수업에서 토스의 기업 전략을 분석하며, 하나의 성공적인 프로덕트가 어떻게 데이터 기반의 생태계로 확장되고 지속 가능한 경쟁 우위를 구축하는지에 대해 깊이 탐구했습니다. 이제는 학문적 분석을 넘어, <span class="font-bold">하이퍼로컬이라는 명확한 방향성 위에서 빠르게 성장하는 당근의 비즈니스 현장에서 실제 데이터를 바탕으로 시장의 기회를 포착하고 문제 해결에 기여하는 'Actionable Insight'를 도출</span>하고 싶습니다.
+                    </p>
+                    <p>
+                        제가 가진 <strong>다양한 프로젝트 리딩 경험, 데이터 기반의 문제 해결 능력, 그리고 비즈니스 전략에 대한 깊은 이해</strong>는 당근 전략팀이 마주한 과제들을 해결하는 데 강력한 자산이 될 것이라 확신합니다. 사용자의 작은 목소리에서 거대한 시장의 흐름을 읽어내고, 이를 논리적인 근거로 뒷받침하여 당근의 다음 10년을 위한 성공적인 전략 수립에 기여하고 싶습니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Me? Section -->
+        <section id="about" class="py-16">
+            <h2 class="text-4xl font-extrabold text-daangn-text mb-4 text-center">Why Me?</h2>
+            <p class="text-lg text-daangn-subtext mb-16 text-center max-w-3xl mx-auto">전략 리서치 직무에 필요한 핵심 역량을 경험을 통해 증명합니다.</p>
+            
+            <div class="bg-white p-10 rounded-2xl shadow-daangn-lg">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Competency 1: Strategic Insight -->
+                    <div class="text-center">
+                        <div class="flex justify-center">
+                            <div class="w-16 h-16 bg-daangn-light rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-8 h-8 text-daangn-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-bold text-daangn-text mb-2 flex items-center justify-center" style="min-height: 3.5rem;">전략적 사고 및<br>비즈니스 이해도</h3>
+                        <p class="text-daangn-subtext">
+                            경제경영 부전공으로 다진 이론적 기반과 실제 프로젝트 경험을 통해 시장과 소비자를 분석하고, 비즈니스 성장을 위한 전략적 방향을 제시할 수 있습니다.
+                        </p>
+                    </div>
+
+                    <!-- Competency 2: Research & Analysis -->
+                    <div class="text-center">
+                        <div class="flex justify-center">
+                            <div class="w-16 h-16 bg-daangn-light rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-8 h-8 text-daangn-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-bold text-daangn-text mb-2 flex items-center justify-center" style="min-height: 3.5rem;">리서치 및 정보 분석/문서화</h3>
+                        <p class="text-daangn-subtext">
+                            국내외 테크 동향, 논문 등 다양한 자료를 리서치하고 핵심을 요약하여, 논리적인 근거를 담은 보고서 및 발표 자료로 만드는 데 능숙합니다.
+                        </p>
+                    </div>
+
+                    <!-- Competency 3: Problem Solving -->
+                    <div class="text-center">
+                        <div class="flex justify-center">
+                            <div class="w-16 h-16 bg-daangn-light rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-8 h-8 text-daangn-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-bold text-daangn-text mb-2 flex items-center justify-center" style="min-height: 3.5rem;">사용자 중심의<br>문제 해결 능력</h3>
+                        <p class="text-daangn-subtext">
+                            사용자의 불편함을 깊이 관찰하고, 이를 해결하기 위한 구체적인 솔루션을 기획하고 직접 구현까지 해 본 경험을 통해 사용자 가치를 최우선으로 생각합니다.
+                        </p>
+                    </div>
+
+                    <!-- Competency 4: Communication -->
+                    <div class="text-center">
+                        <div class="flex justify-center">
+                            <div class="w-16 h-16 bg-daangn-light rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-8 h-8 text-daangn-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2V4a2 2 0 012-2h2.586a1 1 0 01.707.293l2.414 2.414a1 1 0 00.707.293H17z"></path></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-bold text-daangn-text mb-2 flex items-center justify-center" style="min-height: 3.5rem;">논리적 커뮤니케이션<br>및 리더십</h3>
+                        <p class="text-daangn-subtext">
+                            다양한 팀에서 리더 역할을 수행하며 공동의 목표를 설정하고, 논리적인 소통을 통해 팀원들의 역량을 이끌어내 프로젝트를 성공으로 이끈 경험이 많습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-16">
+            <h2 class="text-4xl font-extrabold text-daangn-text mb-4 text-center">My Experiences & Projects</h2>
+            <p class="text-lg text-daangn-subtext mb-16 text-center max-w-3xl mx-auto">
+                저의 모든 경험은 '전략'이라는 하나의 목표를 향합니다.<br>
+                각 카드를 클릭하여 상세 내용을 확인하실 수 있습니다.
+            </p>
+            
+            <div class="space-y-12">
+                <!-- Group 1: 리서치 & 전략 수립 -->
+                <div class="bg-white p-8 rounded-2xl shadow-daangn-lg">
+                    <h3 class="text-2xl font-bold text-daangn-text mb-6">1. 리서치 & 전략 수립 역량</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white p-6 rounded-xl shadow-daangn transition-all duration-300 hover:shadow-daangn-lg hover:-translate-y-1 cursor-pointer flex flex-col h-full active:scale-95" data-detail-id="strategy-report">
+                            <p class="text-sm font-semibold text-daangn-orange">ACADEMIC PROJECT</p>
+                            <h4 class="text-xl font-bold text-daangn-text mt-1 mb-2 flex-grow">경영전략 케이스 분석 레포트</h4>
+                            <p class="text-daangn-subtext">3C, SWOT 등 전략 프레임워크를 활용해 기업 사례를 분석하고, 시장 데이터를 기반으로 대안 전략을 제시했습니다.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-daangn transition-all duration-300 hover:shadow-daangn-lg hover:-translate-y-1 cursor-pointer flex flex-col h-full active:scale-95" data-detail-id="ucb">
+                            <p class="text-sm font-semibold text-daangn-orange">GLOBAL & RESEARCH</p>
+                            <h4 class="text-xl font-bold text-daangn-text mt-1 mb-2 flex-grow">UC Berkeley 여름학기 파견</h4>
+                            <p class="text-daangn-subtext">영어로 진행되는 프로젝트를 통해 글로벌 환경에서의 리서치, 자료 분석 및 소통 역량을 검증받았습니다.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-daangn transition-all duration-300 hover:shadow-daangn-lg hover:-translate-y-1 cursor-pointer flex flex-col h-full active:scale-95" data-detail-id="db-school">
+                            <p class="text-sm font-semibold text-daangn-orange">BUSINESS SIMULATION</p>
+                            <h4 class="text-xl font-bold text-daangn-text mt-1 mb-2 flex-grow">DB 기업 경영 체험스쿨</h4>
+                            <p class="text-daangn-subtext">가상 기업 경영을 통해 고객 분석, 가치 제안, 재무/마케팅 등 비즈니스 핵심 프로세스를 체험했습니다.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 2: 기획, 실행, 그리고 문제 해결 -->
+                <div class="bg-white p-8 rounded-2xl shadow-daangn-lg">
+                    <h3 class="text-2xl font-bold text-daangn-text mb-6">2. 기획, 실행, 그리고 문제 해결 역량</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white p-6 rounded-xl shadow-daangn transition-all duration-300 hover:shadow-daangn-lg hover:-translate-y-1 cursor-pointer flex flex-col h-full active:scale-95" data-detail-id="idea-competition">
+                            <p class="text-sm font-semibold text-daangn-orange">IDEA COMPETITION</p>
+                            <h4 class="text-xl font-bold text-daangn-text mt-1 mb-2 flex-grow">GIST-호남권대학 창업아이디어 경진대회</h4>
+                            <p class="text-daangn-subtext">휠체어 이용자의 이동 불편 문제를 해결하기 위한 '이동형 장애물 위치 표시 지도 서비스'를 제안하여 장려상을 수상했습니다.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-daangn transition-all duration-300 hover:shadow-daangn-lg hover:-translate-y-1 cursor-pointer flex flex-col h-full active:scale-95" data-detail-id="science-museum">
+                            <p class="text-sm font-semibold text-daangn-orange">SYSTEM DEVELOPMENT</p>
+                            <h4 class="text-xl font-bold text-daangn-text mt-1 mb-2 flex-grow">국립광주과학관 업무 자동화 시스템 개발</h4>
+                            <p class="text-daangn-subtext">사용자 불편함을 발견, 직접 시스템을 개발하여 문제를 100% 해결하며 기획-실행-개선의 전 과정을 경험했습니다.</p>
+                        </div>
+                         <div class="bg-white p-6 rounded-xl shadow-daangn transition-all duration-300 hover:shadow-daangn-lg hover:-translate-y-1 cursor-pointer flex flex-col h-full active:scale-95" data-detail-id="gge">
+                            <p class="text-sm font-semibold text-daangn-orange">BUSINESS & TEAMWORK</p>
+                            <h4 class="text-xl font-bold text-daangn-text mt-1 mb-2 flex-grow">GGE 창업 서포터즈</h4>
+                            <p class="text-daangn-subtext">호남권 최대 창업 행사를 기획/운영하며, 한정된 자원 속에서 목표를 달성하는 실행력과 위기관리 능력을 길렀습니다.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-daangn transition-all duration-300 hover:shadow-daangn-lg hover:-translate-y-1 cursor-pointer flex flex-col h-full active:scale-95" data-detail-id="house-union">
+                            <p class="text-sm font-semibold text-daangn-orange">COMMUNITY & PLANNING</p>
+                            <h4 class="text-xl font-bold text-daangn-text mt-1 mb-2 flex-grow">하우스연합회 복지팀</h4>
+                            <p class="text-daangn-subtext">다양한 의견을 수렴하고 예기치 못한 변수에 대응하며, 커뮤니티를 위한 행사를 성공적으로 기획하고 운영했습니다.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 3: 리더십 & 커뮤니케이션 -->
+                <div class="bg-white p-8 rounded-2xl shadow-daangn-lg">
+                    <h3 class="text-2xl font-bold text-daangn-text mb-6">3. 리더십 & 커뮤니케이션 역량</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white p-6 rounded-xl shadow-daangn transition-all duration-300 hover:shadow-daangn-lg hover:-translate-y-1 cursor-pointer flex flex-col h-full active:scale-95" data-detail-id="ambassador">
+                            <p class="text-sm font-semibold text-daangn-orange">LEADERSHIP & MANAGEMENT</p>
+                            <h4 class="text-xl font-bold text-daangn-text mt-1 mb-2 flex-grow">GIST 공식 학생홍보대사</h4>
+                            <p class="text-daangn-subtext">부회장으로서 대내외 행사를 총괄하고, 문서관리자로서 회의록/보고서를 관리하며 조직의 체계적 운영에 기여했습니다.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-daangn transition-all duration-300 hover:shadow-daangn-lg hover:-translate-y-1 cursor-pointer flex flex-col h-full active:scale-95" data-detail-id="kqic">
+                            <p class="text-sm font-semibold text-daangn-orange">CONTENTS & LEADERSHIP</p>
+                            <h4 class="text-xl font-bold text-daangn-text mt-1 mb-2 flex-grow">KQIC 대학생 기자단</h4>
+                            <p class="text-daangn-subtext">팀 리더로서 전문 주제를 대중적인 콘텐츠로 제작/홍보하며, 목표 설정과 팀워크를 통해 성과를 창출했습니다.</p>
+                        </div>
+                         <div class="bg-white p-6 rounded-xl shadow-daangn transition-all duration-300 hover:shadow-daangn-lg hover:-translate-y-1 cursor-pointer flex flex-col h-full active:scale-95" data-detail-id="dreamclass">
+                            <p class="text-sm font-semibold text-daangn-orange">MENTORING & COMMUNICATION</p>
+                            <h4 class="text-xl font-bold text-daangn-text mt-1 mb-2 flex-grow">삼성 드림클래스 멘토</h4>
+                            <p class="text-daangn-subtext">멘티의 눈높이에 맞춰 소통하고 동기를 부여하며, 공감 기반의 커뮤니케이션 능력을 키웠습니다.</p>
+                        </div>
+                         <div class="bg-white p-6 rounded-xl shadow-daangn transition-all duration-300 hover:shadow-daangn-lg hover:-translate-y-1 cursor-pointer flex flex-col h-full active:scale-95" data-detail-id="buddy">
+                            <p class="text-sm font-semibold text-daangn-orange">CROSS-CULTURAL COMMUNICATION</p>
+                            <h4 class="text-xl font-bold text-daangn-text mt-1 mb-2 flex-grow">GIST 학사과정 버디프로그램</h4>
+                            <p class="text-daangn-subtext">외국인 신입생의 적응을 도우며, 문화적 차이를 이해하고 포용하는 글로벌 커뮤니케이션 역량을 함양했습니다.</p>
+                        </div>
+                         <div class="bg-white p-6 rounded-xl shadow-daangn transition-all duration-300 hover:shadow-daangn-lg hover:-translate-y-1 cursor-pointer flex flex-col h-full active:scale-95" data-detail-id="eec">
+                            <p class="text-sm font-semibold text-daangn-orange">TECH PROMOTION</p>
+                            <h4 class="text-xl font-bold text-daangn-text mt-1 mb-2 flex-grow">2023 EEC 서포터즈</h4>
+                            <p class="text-daangn-subtext">기술의 가치를 대중에게 효과적으로 알리고, 교내 창업 문화를 확산하는 데 기여하며 설득과 소통의 중요성을 배웠습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-16">
+        <div class="container mx-auto px-6 py-8 text-center text-daangn-subtext">
+            <p class="font-semibold text-lg text-daangn-text">Contact</p>
+            <p>Email: cozy1ove@naver.com | Phone: 010-4576-5971</p>
+            <p class="mt-4">&copy; 2025 정유라. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="experience-modal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 hidden animate-fadeIn z-50">
+        <div id="modal-content-box" class="bg-white rounded-2xl shadow-daangn-lg w-full max-w-2xl max-h-[90vh] flex flex-col animate-slideUp">
+            <!-- Modal Header -->
+            <div class="flex justify-between items-center p-6 border-b border-gray-200">
+                <h3 id="modal-title" class="text-xl md:text-2xl font-bold text-daangn-text"></h3>
+                <button id="close-modal" class="text-daangn-subtext hover:text-daangn-text transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            <!-- Modal Body -->
+            <div id="modal-body" class="p-6 md:p-8 overflow-y-auto">
+                <!-- 상세 내용은 여기에 채워집니다. -->
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- 상세 내용 데이터 ---
+            // 가독성을 위해 HTML 태그를 포함한 템플릿 리터럴로 변경했습니다.
+            const experienceDetails = {
+                'strategy-report': {
+                    title: '경영전략 케이스 분석 레포트',
+                    content: `
+                        <div class="space-y-5 text-daangn-subtext leading-relaxed">
+                            <p><strong>• 논리적/체계적 기업 분석</strong><br>
+                            경제경영학부의 전략 경영 과목의 일환으로, 핀테크 산업의 대표 주자인 '토스'의 기업 전략을 심층적으로 분석했습니다. 첫 번째 레포트에서는 토스의 차별화 전략을, 두 번째 레포트에서는 자회사 '토스플레이스'의 수직적 통합 및 다각화 전략의 정당성을 분석했습니다. 차별화, 수직적 통합, 다각화 전략을 VRIO, 가치 사슬 등 전략 프레임워크에 기반하여 체계적으로 분석했습니다. 이 과정을 통해 기업의 핵심 경쟁력을 파악하고, 신사업 진출의 타당성을 논리적으로 검증했습니다.</p>
+                            <p><strong>• 주도적인 리서치 및 인사이트 도출</strong><br>
+                            국내외 시장 및 경쟁사(Block 등)에 대한 폭넓은 리서치를 통해 토스만의 독자적인 '리버스 블록(Reverse Block)' 성장 방식을 정의했습니다. 주어진 과제를 넘어, 깊이 있는 분석으로 새로운 전략적 관점을 주도적으로 제시했습니다.</p>
+                            <p><strong>• 데이터 기반 전략 수립 역량 이해</strong><br>
+                            이 프로젝트를 통해 기업의 전략적 의사결정을 다양한 이론적 프레임워크(VRIO, TCE, M-Form 등)에 맞춰 분석하고, 데이터와 시장 상황에 근거하여 논리적으로 해석하는 능력을 길렀습니다. 특히 복잡한 비즈니스 모델의 본질을 파악하고, 경쟁 환경 속에서 기업이 지속 가능한 경쟁 우위를 구축하는 방법에 대한 깊이 있는 통찰력을 얻었습니다.이를 통해 데이터가 비즈니스 모델과 사용자 가치를 어떻게 혁신하는지 파악하는 역량을 길렀습니다.</p>
+                        </div>`
+                },
+                'ambassador': {
+                    title: 'GIST 공식 학생홍보대사 지온나래',
+                    content: `
+                        <p class="text-sm font-semibold text-gray-500 mb-4">(Oct. 2023 ~ Dec. 2024)</p>
+                        <div class="space-y-5 text-daangn-subtext leading-relaxed">
+                            <p><strong>• 주도적인 기획 및 실행</strong><br>
+                            2024년도 대외 행사 및 프로그램을 총괄 기획하며, 목표 설정부터 예산 관리, 실행, 결과 분석까지 전 과정을 주도했습니다. 특히, 정해진 계획을 따르는 것을 넘어, 더 효과적인 홍보를 위해 새로운 프로그램을 직접 제안하고 실행하며 주도적으로 업무를 이끌었습니다.</p>
+                            <p><strong>• 체계적인 문서 관리</strong><br>
+                            산재해 있던 안건록과 결과 보고서의 양식을 표준화하고 피드백 과정을 도입하여 팀의 업무 효율을 크게 증대시켰습니다. 이 과정에서 PowerPoint를 활용해 활동 보고서를 시각적으로 명료하게 작성하고, Excel로 행사 예산 및 참여자 데이터를 관리하며 실질적인 MS Office 활용 능력을 길렀습니다.</p>
+                            <p><strong>• 논리적 커뮤니케이션</strong><br>
+                            교내외 다양한 구성원(학생, 교직원, 외부 입시 관계자)과 소통하며 각 이해관계자의 요구사항을 조율하고 설득했습니다. 이를 통해 공동의 목표(성공적인 행사 개최)를 달성하며, 복잡한 상황에서도 명확하고 논리적인 소통으로 문제를 해결하는 방법을 체득했습니다.</p>
+                        </div>`
+                },
+                'science-museum': {
+                    title: '국립광주과학관 업무 자동화 시스템 개발',
+                    content: `
+                        <p class="text-sm font-semibold text-gray-500 mb-4">(Jul. 2024 ~ Aug. 2024)</p>
+                        <div class="space-y-5 text-daangn-subtext leading-relaxed">
+                            <p><strong>• 사용자 문제 발견 및 정의</strong><br>
+                            임직원들이 보고를 위해 아날로그 방식으로 대기하며 발생하는 시간 낭비와 업무 집중도 저하라는 '사용자 문제'를 명확히 포착했습니다. 이는 사용자의 입장에서 프로세스의 비효율성을 관찰하고 개선점을 제안하는 역량의 기반이 되었습니다.</p>
+                            <p><strong>• 데이터 기반 시스템 설계 및 개발</strong><br>
+                            문제 해결을 위해 Google Apps Script 기반의 자동화 시스템을 직접 설계하고 개발했습니다. 실시간 웹 대시보드와 관리자용 컨트롤 패널을 구축하여, 이전에는 파악할 수 없었던 대기 순서 및 시간 데이터를 투명하게 만들고 프로세스의 예측 가능성을 확보했습니다.</p>
+                            <p><strong>• 프로젝트 관리 및 성과 측정</strong><br>
+                            문제 정의부터 솔루션 개발, 그리고 이메일 자동 알림과 같은 추가 기능 구현까지 하나의 온전한 프로젝트를 완수했습니다. '물리적 대기 시간 100% 제거', '프로세스 투명성 확보' 등 정량적/정성적 성과를 통해 프로젝트의 성공을 측정하며 실무적인 감각을 익혔습니다.</p>
+                        </div>`
+                },
+                'kqic': {
+                    title: 'KQIC 대학생 기자단 1기',
+                    content: `
+                        <p class="text-sm font-semibold text-gray-500 mb-4">(Sep. 2024 ~ Dec. 2024)</p>
+                        <div class="space-y-5 text-daangn-subtext leading-relaxed">
+                            <p><strong>• 전문 분야 리서치 및 콘텐츠 기획</strong><br>
+                            '양자 기술'이라는 전문 분야를 대중의 눈높이에 맞춰 전달하기 위해 관련 논문, 기사, 영상을 깊이 있게 리서치했습니다. 이를 바탕으로 월별 영상 콘텐츠 및 카드뉴스 제작을 위한 구체적인 기획안을 작성하며, 복잡한 정보를 재구성하는 능력을 키웠습니다.</p>
+                            <p><strong>• 시각적 정보 전달 능력 (문서화)</strong><br>
+                            리서치한 정보를 바탕으로 다수의 카드뉴스를 직접 제작했습니다. 텍스트와 이미지를 효과적으로 배치하여 어려운 내용을 명료하게 전달하는 과정을 통해, 시각적 정보 전달 능력과 PowerPoint를 활용한 콘텐츠 제작 역량을 길렀습니다.</p>
+                            <p><strong>• 팀 리더십 및 네트워크 형성</strong><br>
+                            3인 1조 팀의 리더로서 기획부터 최종 결과물 제작까지 프로젝트 전반을 이끌었습니다. 특히 양자 산업 분야의 전문가 인터뷰를 직접 섭외하고 진행하며, 목표 달성을 위한 적극적인 커뮤니케이션 능력과 전문가 네트워크 형성 능력을 함양했습니다.</p>
+                        </div>`
+                },
+                'ucb': {
+                    title: 'UC Berkeley 여름학기 파견학생',
+                    content: `
+                        <p class="text-sm font-semibold text-gray-500 mb-4">(Jun. 2024 ~ Aug. 2024)</p>
+                        <div class="space-y-5 text-daangn-subtext leading-relaxed">
+                            <p><strong>• 영어 기반의 전문 정보 습득 및 활용</strong><br>
+                            모든 강의와 토론, 과제를 영어로 수행하며 영어 논문, 기사와 같은 전문적인 자료를 읽고 핵심을 파악하는 능력을 길렀습니다. 이는 단순한 독해를 넘어, 정보를 비판적으로 분석하고 자신의 의견을 정립하는 데 활용하는 수준의 역량입니다.</p>
+                            <p><strong>• 글로벌 환경에서의 협업 및 소통</strong><br>
+                            현지 학생들과 교양 프로젝트를 진행하며 문화와 언어의 장벽을 넘어 협업했습니다. 적극적인 소통과 상호 이해를 통해 공동의 목표를 성공적으로 달성하며, 다양한 배경을 가진 사람들과 효과적으로 협력하는 능력을 체득했습니다.</p>
+                        </div>`
+                },
+                'gge': {
+                    title: 'GGE 창업 서포터즈',
+                    content: `
+                        <p class="text-sm font-semibold text-gray-500 mb-4">(Mar. 2024 ~ Dec. 2024)</p>
+                        <div class="space-y-5 text-daangn-subtext leading-relaxed">
+                            <p><strong>• 모바일/기술 트렌드에 대한 높은 이해</strong><br>
+                            호남권 최대 규모의 창업 네트워킹 행사를 직접 기획하고 운영하며, 최신 기술 동향과 새로운 비즈니스 모델을 가장 가까이에서 접했습니다. 이는 모바일 프로덕트를 포함한 IT 산업 생태계 전반에 대한 깊은 관심과 이해로 이어졌습니다.</p>
+                            <p><strong>• 스타트업 방식의 주도적 문제 해결</strong><br>
+                            6명이라는 소규모 팀으로 대규모 행사를 준비하며, 정해진 역할 구분 없이 모든 구성원이 주도적으로 문제를 찾아 해결해야 했습니다. 이 과정에서 어떤 과제가 주어져도 반드시 해내는 실행력과 도전적인 태도를 몸에 익혔습니다.</p>
+                        </div>`
+                },
+                'db-school': {
+                    title: 'DB 대학생 기업 경영 체험스쿨',
+                    content: `
+                        <p class="text-sm font-semibold text-gray-500 mb-4">(Aug. 2024)</p>
+                        <div class="space-y-5 text-daangn-subtext leading-relaxed">
+                            <p><strong>• 비즈니스 프로세스 체험</strong><br>
+                            가상의 기업을 설립하고 운영하는 시뮬레이션에 참여했습니다. 시장 분석, 제품 개발, 마케팅 전략 수립, 재무 관리 등 기업 경영의 핵심적인 프로세스를 직접 경험하며 비즈니스에 대한 종합적인 시각을 길렀습니다.</p>
+                            <p><strong>• 데이터 기반 의사결정</strong><br>
+                            제한된 자원과 시장 데이터 속에서 최적의 의사결정을 내리는 훈련을 했습니다. 각 결정이 회사의 성과에 미치는 영향을 실시간으로 확인하며, 데이터를 근거로 전략을 수립하고 수정하는 능력을 배양했습니다.</p>
+                        </div>`
+                },
+                'house-union': {
+                    title: '하우스연합회 복지팀',
+                    content: `
+                        <p class="text-sm font-semibold text-gray-500 mb-4">(Mar. 2023 ~ Dec. 2023)</p>
+                        <div class="space-y-5 text-daangn-subtext leading-relaxed">
+                            <p><strong>• 이해관계자 요구 분석 및 조율</strong><br>
+                            기숙사 학생들의 다양한 요구사항을 수렴하고, 한정된 예산과 자원 내에서 최대의 만족을 이끌어내기 위한 행사를 기획했습니다. 서로 다른 의견을 조율하고 합의점을 찾아가는 과정에서 실질적인 협상 및 소통 능력을 길렀습니다.</p>
+                            <p><strong>• 위기관리 및 문제 해결</strong><br>
+                            행사 준비 및 진행 과정에서 발생하는 예상치 못한 변수(예: 참여 저조, 물품 부족)에 신속하게 대응하고 대안을 마련했습니다. 이를 통해 불확실한 상황에서도 침착하게 문제를 분석하고 해결하는 능력을 키웠습니다.</p>
+                        </div>`
+                },
+                'dreamclass': {
+                    title: '삼성 드림클래스 멘토',
+                    content: `
+                        <p class="text-sm font-semibold text-gray-500 mb-4">(Sep. 2023 ~ Jan. 2024)</p>
+                        <div class="space-y-5 text-daangn-subtext leading-relaxed">
+                            <p><strong>• 공감 기반의 사용자 이해</strong><br>
+                            중학생 멘티들의 학습 및 진로 고민을 듣고, 그들의 눈높이에 맞춰 소통하며 신뢰 관계를 구축했습니다. 이는 사용자의 입장에서 생각하고 그들의 근본적인 필요를 파악하는 사용자 중심 사고의 기초가 되었습니다.</p>
+                            <p><strong>• 동기부여 및 성장 지원</strong><br>
+                            단순한 지식 전달을 넘어, 멘티 스스로 목표를 설정하고 성취감을 느낄 수 있도록 지원했습니다. 이 경험을 통해 개인의 성장을 돕고 잠재력을 이끌어내는 커뮤니케이션의 중요성을 깨달았습니다.</p>
+                        </div>`
+                },
+                'buddy': {
+                    title: 'GIST 학사과정 버디프로그램',
+                    content: `
+                        <p class="text-sm font-semibold text-gray-500 mb-4">(Sep. 2023 ~ Dec. 2023)</p>
+                        <div class="space-y-5 text-daangn-subtext leading-relaxed">
+                            <p><strong>• 크로스 컬처 커뮤니케이션</strong><br>
+                            외국인 신입생의 성공적인 한국 생활 및 학교 적응을 도왔습니다. 문화적 차이에서 오는 오해를 줄이고, 비언어적 표현까지 고려하며 소통하는 등 글로벌 환경에서의 커뮤니케이션 역량을 키웠습니다.</p>
+                            <p><strong>• 정보 비대칭성 해소</strong><br>
+                            신입생들이 알기 어려운 교내 정보나 생활 팁을 선제적으로 공유하며, 정보 부족으로 인한 어려움을 해결해주었습니다. 이는 사용자가 필요로 하는 정보를 적시에 제공하는 것의 중요성을 깨닫는 계기가 되었습니다.</p>
+                        </div>`
+                },
+                'eec': {
+                    title: '2023 EEC 서포터즈',
+                    content: `
+                        <p class="text-sm font-semibold text-gray-500 mb-4">(Sep. 2023 ~ Nov. 2023)</p>
+                        <div class="space-y-5 text-daangn-subtext leading-relaxed">
+                            <p><strong>• 기술 가치 전달 및 홍보</strong><br>
+                            'GIST 스타트업 나이트' 행사에서 한국형 I-Corps 사업의 성과를 홍보하는 부스를 운영했습니다. 기술의 핵심 가치를 일반 참석자들도 이해하기 쉽게 설명하며, 복잡한 개념을 명료하게 전달하는 능력을 길렀습니다.</p>
+                            <p><strong>• 현장 피드백 수렴 및 대응</strong><br>
+                            부스를 방문한 사람들의 질문에 즉각적으로 답변하고, 그들의 반응을 통해 어떤 정보에 더 관심이 많은지를 파악했습니다. 이는 현장에서 사용자의 피드백을 수렴하고, 이를 바탕으로 소통 방식을 개선하는 경험이었습니다.</p>
+                        </div>`
+                },
+                'idea-competition': {
+                    title: 'GIST-호남권대학 창업아이디어 경진대회',
+                    content: `
+                        <p class="text-sm font-semibold text-gray-500 mb-4">(2024, 장려상 수상)</p>
+                        <div class="space-y-5 text-daangn-subtext leading-relaxed">
+                            <p><strong>• 사용자 문제 정의 및 공감</strong><br>
+                            휠체어를 이용하는 장애인들이 일상에서 겪는 이동의 어려움에 주목했습니다. 특히, 지도 앱에 표시되지 않는 일시적이고 가변적인 장애물(불법 주정차, 공사 구간, 가게 앞 적치물 등)이 큰 불편을 야기한다는 점을 '사용자 문제'로 명확히 정의했습니다.</p>
+                            <p><strong>• 데이터 기반 솔루션 기획</strong><br>
+                            문제 해결을 위해, 사용자들이 직접 이동형 장애물의 위치를 실시간으로 제보하고 공유하는 지도 서비스를 기획했습니다. 집단지성(Crowdsourcing)을 활용하여 데이터를 수집하고, 이를 지도 위에 시각화하여 다른 사용자들에게 안전하고 편리한 경로 정보를 제공하는 아이디어를 구체화했습니다.</p>
+                            <p><strong>• 가치 제안 및 비즈니스 모델 구상</strong><br>
+                            이 서비스가 사회적 약자의 이동권을 보장하는 사회적 가치와 함께, 관련 데이터를 지자체나 민간 기업에 제공하여 도시 환경 개선에 기여할 수 있는 비즈니스적 가치를 함께 제안했습니다. 이 아이디어의 독창성과 사회적 기여도를 인정받아 장려상을 수상했습니다.</p>
+                        </div>`
+                }
+            };
+
+            // --- 모달 로직 ---
+            const modal = document.getElementById('experience-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalBody = document.getElementById('modal-body');
+            const closeModalButton = document.getElementById('close-modal');
+            const experienceCards = document.querySelectorAll('[data-detail-id]');
+
+            const openModal = (details) => {
+                if (details) {
+                    modalTitle.textContent = details.title;
+                    modalBody.innerHTML = details.content;
+                    modal.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden'; // 배경 스크롤 방지
+                }
+            };
+
+            const closeModal = () => {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto'; // 배경 스크롤 복구
+            };
+
+            // 경험 카드 클릭 시 모달 열기
+            experienceCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    const detailId = card.getAttribute('data-detail-id');
+                    const details = experienceDetails[detailId];
+                    openModal(details);
+                });
+            });
+
+            // 닫기 버튼 클릭 시 모달 닫기
+            closeModalButton.addEventListener('click', closeModal);
+
+            // 모달 바깥 영역 클릭 시 모달 닫기
+            modal.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    closeModal();
+                }
+            });
+            
+            // ESC 키를 눌렀을 때 모달 닫기
+            window.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
+                    closeModal();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
